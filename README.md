@@ -93,6 +93,7 @@ graph LR
 **Core:** [merlion-kernel](https://github.com/MerlionOS/merlion-kernel) — Custom kernel with GPU-first scheduling, zero-copy memory management<br/>
 **Language support:** Go ([go-merlionos](https://github.com/MerlionOS/go-merlionos)), Rust ([libmerlion](https://github.com/MerlionOS/libmerlion)), C/C++ ([musl-merlionos](https://github.com/MerlionOS/musl-merlionos))<br/>
 **Inference:** [merlion-infer](https://github.com/MerlionOS/merlion-infer) — Bare-metal LLM inference engine<br/>
+**Zig port:** [merlionos-zig](https://github.com/MerlionOS/merlionos-zig) — Clean reimplementation in Zig<br/>
 **Try it:** [Playground](https://github.com/MerlionOS/merlionos-playground)
 
-**Tech stack:** Rust, Assembly, C, Go, GPU/CUDA
+**Tech stack:** Rust, Zig, Assembly, C, Go, GPU/CUDA
