@@ -25,8 +25,8 @@ graph LR
     NFT[NFT Marketplace] -->|Contracts| Node
 ```
 
-**Core:** [qfc-core](https://github.com/qfc-network/qfc-core) — Rust blockchain node with Blake3 PoW, Merkle Patricia Trie, Ed25519/VRF cryptography, libp2p networking
-**Ecosystem:** Explorer, DEX, NFT marketplace, wallet (desktop + mobile), faucet, AI inference router, SDK (JS/Python), VS Code extension
+**Core:** [qfc-core](https://github.com/qfc-network/qfc-core) — Rust blockchain node with Blake3 PoW, Merkle Patricia Trie, Ed25519/VRF cryptography, libp2p networking<br/>
+**Ecosystem:** Explorer, DEX, NFT marketplace, wallet (desktop + mobile), faucet, AI inference router, SDK (JS/Python), VS Code extension<br/>
 **34 repositories** covering the full blockchain stack
 
 **Tech stack:** Rust, RocksDB, libp2p, Blake3, Ed25519, React, TypeScript, Solidity
@@ -47,7 +47,7 @@ graph LR
     Prom -.->|scrape| Agent2
 ```
 
-**Components:** sigma-api (Rust/Axum), sigma-web (React), sigma-agent, sigma-probe, sigma-cli
+**Components:** sigma-api (Rust/Axum), sigma-web (React), sigma-agent, sigma-probe, sigma-cli<br/>
 **Tech stack:** Rust, Axum, PostgreSQL, Redis, Prometheus, Grafana, Thanos, React, Docker, K8s
 
 ---
@@ -90,9 +90,9 @@ graph LR
     C[C/C++ Programs] -->|musl-merlionos| Kernel
 ```
 
-**Core:** [merlion-kernel](https://github.com/MerlionOS/merlion-kernel) — Custom kernel with GPU-first scheduling, zero-copy memory management
-**Language support:** Go ([go-merlionos](https://github.com/MerlionOS/go-merlionos)), Rust ([libmerlion](https://github.com/MerlionOS/libmerlion)), C/C++ ([musl-merlionos](https://github.com/MerlionOS/musl-merlionos))
-**Inference:** [merlion-infer](https://github.com/MerlionOS/merlion-infer) — Bare-metal LLM inference engine
+**Core:** [merlion-kernel](https://github.com/MerlionOS/merlion-kernel) — Custom kernel with GPU-first scheduling, zero-copy memory management<br/>
+**Language support:** Go ([go-merlionos](https://github.com/MerlionOS/go-merlionos)), Rust ([libmerlion](https://github.com/MerlionOS/libmerlion)), C/C++ ([musl-merlionos](https://github.com/MerlionOS/musl-merlionos))<br/>
+**Inference:** [merlion-infer](https://github.com/MerlionOS/merlion-infer) — Bare-metal LLM inference engine<br/>
 **Try it:** [Playground](https://github.com/MerlionOS/merlionos-playground)
 
 **Tech stack:** Rust, Assembly, C, Go, GPU/CUDA
