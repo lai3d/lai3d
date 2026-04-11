@@ -7,7 +7,7 @@ I'm a DevOps/SRE engineer focused on building high-performance distributed syste
 **Infrastructure:** Kubernetes, Istio, Docker, Terraform
 **Monitoring:** Prometheus, Grafana, Thanos, ClickHouse
 **Cloud:** AWS, Linux
-**Languages:** Go, TypeScript, Python
+**Languages:** Go, Rust, TypeScript, Python
 
 ---
 
@@ -34,3 +34,22 @@ graph LR
 - **Design Docs** ([cdn-design](https://github.com/EdgeFlowCDN/cdn-design)) — Architecture & design documents (中文 / English)
 
 **Tech stack:** Go, gRPC, PostgreSQL, Redis, ClickHouse, Prometheus, React, Docker, K8s
+
+---
+
+#### 🛰️ Featured Project: [Sigma](https://github.com/lai3d/sigma)
+
+Lightweight VPS fleet management platform — track instances across dozens of cloud providers, manage IP addresses, and monitor with Prometheus/Grafana.
+
+```mermaid
+graph LR
+    Web[React UI] -->|API| Server[Rust + Axum]
+    Server --> PG[(PostgreSQL)]
+    Agent1[sigma-agent<br/>VPS-1] -->|heartbeat| Server
+    Agent2[sigma-agent<br/>VPS-N] -->|heartbeat| Server
+    Prom[Prometheus] -.->|scrape| Agent1
+    Prom -.->|scrape| Agent2
+```
+
+**Components:** sigma-api (Rust/Axum), sigma-web (React), sigma-agent, sigma-probe, sigma-cli
+**Tech stack:** Rust, Axum, PostgreSQL, Redis, Prometheus, Grafana, Thanos, React, Docker, K8s
