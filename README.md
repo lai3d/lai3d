@@ -4,9 +4,9 @@ I'm a DevOps/SRE engineer focused on building high-performance distributed syste
 
 #### 🔧 What I work with
 
-**Infrastructure:** Kubernetes, Istio, Docker, Terraform
-**Monitoring:** Prometheus, Grafana, Thanos, ClickHouse
-**Cloud:** AWS, Linux
+**Infrastructure:** Kubernetes, Istio, Docker, Terraform<br/>
+**Monitoring:** Prometheus, Grafana, Thanos, ClickHouse<br/>
+**Cloud:** AWS, Linux<br/>
 **Languages:** Rust, Go, TypeScript, Python
 
 ---
