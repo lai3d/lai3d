@@ -73,3 +73,26 @@ graph LR
 - **8 repositories** covering edge proxy, control plane, scheduler, console, CLI, deployment, Terraform, design docs
 
 **Tech stack:** Go, gRPC, PostgreSQL, Redis, ClickHouse, Prometheus, React, Docker, K8s
+
+---
+
+#### 🧠 Featured Project: [MerlionOS](https://github.com/MerlionOS)
+
+A bare-metal operating system purpose-built for LLM inference — zero overhead, maximum throughput.
+
+```mermaid
+graph LR
+    App[LLM Inference] --> Kernel[merlion-kernel]
+    Kernel --> GPU[GPU Direct Access]
+    Kernel --> Mem[Memory Manager]
+    Go[Go Programs] -->|go-merlionos| Kernel
+    Rust[Rust Programs] -->|libmerlion| Kernel
+    C[C/C++ Programs] -->|musl-merlionos| Kernel
+```
+
+**Core:** [merlion-kernel](https://github.com/MerlionOS/merlion-kernel) — Custom kernel with GPU-first scheduling, zero-copy memory management
+**Language support:** Go ([go-merlionos](https://github.com/MerlionOS/go-merlionos)), Rust ([libmerlion](https://github.com/MerlionOS/libmerlion)), C/C++ ([musl-merlionos](https://github.com/MerlionOS/musl-merlionos))
+**Inference:** [merlion-infer](https://github.com/MerlionOS/merlion-infer) — Bare-metal LLM inference engine
+**Try it:** [Playground](https://github.com/MerlionOS/merlionos-playground)
+
+**Tech stack:** Rust, Assembly, C, Go, GPU/CUDA
