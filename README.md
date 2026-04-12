@@ -39,7 +39,7 @@ Lightweight VPS fleet management platform — track instances across dozens of c
 
 ```mermaid
 graph LR
-    Web[React UI] -->|API| Server[Rust + Axum]
+    Web[sigma-web<br/>React] -->|API| Server[sigma-api<br/>Rust + Axum]
     Server --> PG[(PostgreSQL)]
     Agent1[sigma-agent<br/>VPS-1] -->|heartbeat| Server
     Agent2[sigma-agent<br/>VPS-N] -->|heartbeat| Server
